@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #659760;
+    color: #7c0606;
+}
+
+h1, h2 {
+    color: #07553e;
+}
+
+/* Header */
+header {
+    background-color: #d1514c;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 3rem;
+}
+
+header .logo p {
+    font-size: 1.2rem;
+}
+
+/* Imagens */
+.festa-img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Seções */
+section {
+    margin: 40px;
+    text-align: center;
+}
+
+.programacao ul {
+    list-style: none;
+    padding: 0;
+}
+
+.programacao li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+form button:hover {
+    background-color: #e64a19;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
