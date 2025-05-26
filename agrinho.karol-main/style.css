@@ -1,93 +1,134 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo global */
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #659760;
-    color: #7c0606;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #baafdb;
 }
 
 h1, h2 {
-    color: #07553e;
+  color: #f8f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #f8faf3;
+}
+
+a:hover {
+  color: #ecf0eb;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Header */
 header {
-    background-color: #d1514c;
-    padding: 20px;
-    text-align: center;
-    color: white;
+  background-color: #22328b;
+  color: rgb(12, 112, 65);
+  padding: 40px 20px;
+  text-align: center;
 }
 
-header .logo h1 {
-    font-size: 3rem;
+header h1 {
+  font-size: 2.5rem;
 }
 
-header .logo p {
-    font-size: 1.2rem;
+/* Navigation */
+nav {
+  background-color: #000764;
+  padding: 10px 0;
 }
 
-/* Imagens */
-.festa-img {
-    max-width: 100%;
-    border-radius: 10px;
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
 }
 
-/* Seções */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 40px 0;
+}
+
 section {
-    margin: 40px;
-    text-align: center;
+  margin-bottom: 40px;
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 1s ease-in-out; /* Transição suave de opacidade */
 }
 
-.programacao ul {
-    list-style: none;
-    padding: 0;
+section.fade-in {
+  opacity: 1; /* Quando a classe fade-in for aplicada, a opacidade será 1 */
 }
 
-.programacao li {
-    font-size: 1.2rem;
-    margin: 10px 0;
+section h2 {
+  margin-bottom: 20px;
 }
 
-/* Formulário de Contato */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-form input, form textarea {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 15px;
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1.1rem;
-}
-
-form button:hover {
-    background-color: #e64a19;
+/* Lists */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+  background-color: #22298b;
+  color: rgb(252, 251, 251);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Botões de Acessibilidade */
+#accessibility-buttons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #000764;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#accessibility-buttons button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#accessibility-buttons button:hover {
+  background-color: #45a049;
+}
+
+/* Contraste Alto */
+.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Aumentar fonte */
+body.increase-font, body.increase-font h1, body.increase-font h2 {
+  font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+}
+
+body.decrease-font, body.decrease-font h1, body.decrease-font h2 {
+  font-size: 0.9rem; /* Diminui o tamanho da fonte */
+}
+
+/* Desabilitar animações */
+.no-animations * {
+  transition: none !important;
+  animation: none !important;
 }

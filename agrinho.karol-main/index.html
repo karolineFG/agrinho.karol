@@ -1,60 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Festa Junina - Tradição e História</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Festa Junina - Tradição e História</h1>
-    <p>Descubra tudo sobre o surgimento da festa junina no Brasil.</p>
-  </header>
-
-  <div class="controls">
-    <button onclick="alterarTamanhoFonte('aumentar')" class="botao">Aumentar Fonte</button>
-    <button onclick="alterarTamanhoFonte('diminuir')" class="botao">Diminuir Fonte</button>
-    <button onclick="alternarContraste()" class="botao">Alternar Contraste</button>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relações entre o Campo e a Cidade</title>
+  <link rel="stylesheet" href="style.css" />
+   
+  <!-- Botões de Acessibilidade -->
+  <div id="accessibility-buttons">
+    <button id="increase-font">Aumentar Fonte</button>
+    <button id="decrease-font">Diminuir Fonte</button>
+    <button id="high-contrast">Contraste Alto</button>
+    <button id="toggle-animations">Desativar Animações</button>
   </div>
 
-  <main>
-    <section>
-      <h2>O Surgimento da Festa Junina</h2>
-      <p>
-        A festa junina é uma das mais tradicionais festas populares do Brasil, celebrada no mês de junho em homenagem a três santos católicos: Santo Antônio, São João e São Pedro. A festa tem origem nas celebrações pagãs e cristãs, sendo um mix de rituais religiosos e culturais.
-      </p>
-      <p>
-        No Brasil, a festa junina ganhou características próprias, com comidas típicas como milho, canjica, pamonha, bolo de milho e a tradicional quadrilha. As festividades são marcadas por danças típicas, fogueiras, vestimentas caipiras e muita música.
-      </p>
-      <p>
-        As festas começaram no interior do Brasil e se espalharam para as grandes cidades, sendo uma verdadeira celebração das tradições rurais. A festa junina é uma forma de valorizar as raízes culturais do país e reunir amigos e familiares em um clima de alegria e confraternização.
-      </p>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>🌾🏙️ Relações entre o Campo e a Cidade</h1>
+      <p>Conexões que moldam nossa vida cotidiana</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="#intro">Introdução</a>
+      <a href="#economia">Economia</a>
+      <a href="#cultura">Cultura</a>
+      <a href="#tecnologia">Tecnologia</a>
+      <a href="#sustentabilidade">Sustentabilidade</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Introdução -->
+    <section id="intro">
+      <h2>🌱 Introdução</h2>
+      <p>A relação entre o campo e a cidade vai além das simples distâncias físicas. O campo é fonte de recursos naturais e produção, enquanto a cidade proporciona consumo, inovação e troca cultural. Juntas, essas realidades impulsionam a economia e a cultura do país.</p>
     </section>
 
-    <section>
-      <h2>Comidas Típicas da Festa Junina</h2>
+    <!-- Economia -->
+    <section id="economia">
+      <h2>💰 Economia</h2>
+      <p>A relação econômica entre o campo e a cidade é uma das mais evidentes. O campo é responsável pela produção de alimentos e matérias-primas (como grãos, leite, carne, madeira, entre outros), que são essenciais para abastecer as cidades. As cidades, por sua vez, funcionam como grandes centros de consumo desses produtos, além de serem responsáveis pela industrialização e distribuição desses produtos para outros mercados.
+
+Além disso, a cidade oferece ao campo infraestrutura (como transporte, tecnologia e serviços financeiros) e inovação. Com o avanço de tecnologias urbanas, como a agricultura de precisão, novas formas de produção mais eficientes estão sendo introduzidas nas áreas rurais.</p>
       <ul>
-        <li>Canjica</li>
-        <li>Pamonha</li>
-        <li>Pipoca</li>
-        <li>Bolo de milho</li>
-        <li>Quentão (bebida quente de gengibre)</li>
+        <li><strong>Produção agrícola</strong>: O campo é responsável pela produção de alimentos que abastecem as cidades.</li>
+        <li><strong>Mercado consumidor</strong>: A cidade é o principal mercado para os produtos do campo.</li>
+        <li><strong>Logística</strong>: O transporte de produtos agrícolas das áreas rurais para as cidades é um elo importante.</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Dança e Música</h2>
-      <p>
-        A quadrilha é a principal dança das festas juninas. Ela é tradicionalmente dançada em pares e envolve passos simples, acompanhados por músicas típicas. As músicas, como "Forró" e "Xote", são dançadas ao som de sanfona, triângulo e zabumba.
-      </p>
+    <!-- Cultura -->
+    <section id="cultura">
+      <h2>🎭 Cultura</h2>
+      <p>As relações sociais entre o campo e a cidade são moldadas por uma troca constante de influências, recursos e pessoas. A migração de pessoas do campo para a cidade, em busca de melhores oportunidades de emprego ou de qualidade de vida, tem sido uma característica marcante da sociedade moderna. Por outro lado, muitas vezes as cidades dependem de pessoas do campo para atender às demandas do mercado de trabalho urbano, como nas áreas de agricultura, construção e transporte.
+
+Além disso, muitos serviços que são consumidos nas cidades, como educação, saúde e lazer, são influenciados pela dinâmica rural. O campo também tem visto a chegada de novas tecnologias que, embora originadas nas cidades, são implementadas para melhorar a vida rural, desde o uso de celulares inteligentes até soluções agrícolas inovadoras.</p>
+      <ul>
+        <li><strong>Festas tradicionais</strong>: Festas como a Festa Junina trazem elementos do campo para as cidades.</li>
+        <li><strong>Artesanato e gastronomia</strong>: A culinária e o artesanato rural são apreciados nas grandes cidades.</li>
+        <li><strong>Influências urbanas no campo</strong>: O acesso à internet e novas tecnologias está trazendo mudanças culturais para as zonas rurais.</li>
+      </ul>
+    </section>
+
+    <!-- Tecnologia -->
+    <section id="tecnologia">
+      <h2>💻 Tecnologia</h2>
+      <p>O campo e a cidade se beneficiam mutuamente das inovações tecnológicas. Tecnologias urbanas, como sistemas de informação, inteligência artificial e internet das coisas (IoT), estão sendo usadas para melhorar a eficiência agrícola no campo, como no uso de sensores para monitoramento de solo e clima, drones para avaliar a saúde das culturas, e sistemas de rastreamento para otimizar a distribuição de alimentos.
+</p>
+      <ul>
+        <li><strong>Agricultura de precisão</strong>: Tecnologias como sensores e drones estão transformando a agricultura no campo.</li>
+        <li><strong>Conectividade</strong>: O uso da internet e das redes sociais permite que os agricultores urbanos divulguem seus produtos e conquistem novos mercados.</li>
+        <li><strong>Desenvolvimento urbano sustentável</strong>: Soluções tecnológicas também são aplicadas para tornar as cidades mais verdes e sustentáveis.</li>
+      </ul>
+    </section>
+
+    <!-- Sustentabilidade -->
+    <section id="sustentabilidade">
+      <h2>🌍 Sustentabilidade</h2>
+      <p>O campo e a cidade estão interligados em questões ambientais de forma crítica. O campo, com suas vastas áreas de florestas, pastagens e campos cultivados, desempenha um papel fundamental na preservação dos recursos naturais e na produção de alimentos sustentáveis. As cidades, por sua vez, são centros de emissões de carbono, consumo excessivo de recursos naturais e geração de lixo. Assim, o campo precisa da cidade para tecnologias verdes e soluções urbanas sustentáveis, enquanto as cidades dependem do campo para manter os ecossistemas naturais e garantir a produção agrícola.
+
+Além disso, a sustentabilidade está se tornando um ponto de convergência entre campo e cidade, com ambos os espaços buscando formas de promover o consumo consciente e reduzir os impactos ambientais. O movimento de agricultura orgânica, por exemplo, tem ganhado força tanto nas zonas rurais quanto nas urbanas, criando uma ligação entre produtores e consumidores conscientes de sua pegada ecológica.</p>
+      <ul>
+        <li><strong>Agricultura sustentável</strong>: O uso de práticas agrícolas que respeitem o meio ambiente é essencial.</li>
+        <li><strong>Consumo responsável</strong>: A cidade deve adotar práticas conscientes, como o consumo de alimentos orgânicos e locais.</li>
+        <li><strong>Preservação dos recursos naturais</strong>: Ambas as áreas devem cooperar para preservar florestas, rios e outros recursos naturais vitais.</li>
+      </ul>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <h2>📬 Contato</h2>
+      <p>Quer saber mais sobre as relações entre o campo e a cidade? Entre em contato conosco!</p>
+      <ul>
+        <li>Email: contato@campoecidade.com.br</li>
+        <li>WhatsApp: (00) 90000-0000</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 - Todos os direitos reservados.</p>
+    <div class="container">
+      <p>© 2025 Relações entre o Campo e a Cidade</p>
+      <p>Siga-nos nas redes sociais!</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>

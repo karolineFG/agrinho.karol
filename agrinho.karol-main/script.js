@@ -1,24 +1,47 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const increaseFontButton = document.getElementById("increase-font");
+  const decreaseFontButton = document.getElementById("decrease-font");
+  const highContrastButton = document.getElementById("high-contrast");
+  const toggleAnimationsButton = document.getElementById("toggle-animations");
 
-// Função para aumentar ou diminuir o tamanho da fonte
-function alterarTamanhoFonte(acao) {
-  var body = document.body;
+  // Aumentar fonte
+  increaseFontButton.addEventListener("click", function () {
+    document.body.classList.add("increase-font");
+    document.body.classList.remove("decrease-font");
+  });
 
-  if (acao === 'aumentar') {
-    if (body.classList.contains('grande-fonte')) {
-      body.classList.add('muito-grande-fonte');
-    } else {
-      body.classList.add('grande-fonte');
-    }
-  } else if (acao === 'diminuir') {
-    if (body.classList.contains('muito-grande-fonte')) {
-      body.classList.remove('muito-grande-fonte');
-    } else if (body.classList.contains('grande-fonte')) {
-      body.classList.remove('grande-fonte');
-    }
+  // Diminuir fonte
+  decreaseFontButton.addEventListener("click", function () {
+    document.body.classList.add("decrease-font");
+    document.body.classList.remove("increase-font");
+  });
+
+  // Ativar/desativar contraste alto
+  highContrastButton.addEventListener("click", function () {
+    document.body.classList.toggle("high-contrast");
+  });
+
+  // Ativar/desativar animações
+  toggleAnimationsButton.addEventListener("click", function () {
+    document.body.classList.toggle("no-animations");
+  });
+
+  // Animação fade-in nas seções
+  const sections = document.querySelectorAll("section");
+
+  // Função para verificar se a seção está visível
+  function checkVisibility() {
+    sections.forEach((section) => {
+      const position = section.getBoundingClientRect();
+      if (position.top < window.innerHeight && position.bottom >= 0) {
+        section.classList.add("fade-in");
+      }
+    });
   }
-}
 
-// Função para alternar entre o contraste claro e escuro
-function alternarContraste() {
-  document.body.classList.toggle('contraste-escuro');
-}
+  // Verifica a visibilidade na carga da página
+  checkVisibility();
+
+  // Adiciona evento de scroll para verificar a visibilidade das seções
+  window.addEventListener("scroll", checkVisibility);
+});
